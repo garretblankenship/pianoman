@@ -1,0 +1,29 @@
+.scoreboard {
+    text-align: right;
+}
+
+.scoreboard p {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.gameboard ul {
+    text-align: center;
+}
+
+.gameboard ul li {
+    display: inline-block;
+    width: 80px;
+    height: 140px;
+    background-color: rgb(204, 204, 204);
+    margin: 0px 20px;
+}
+
+.gameboard section:last-of-type{
+    background-color: #f2dee2;
+}
+
+.gameboard ul li.selected {
+    background-color: green;
+}

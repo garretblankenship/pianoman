@@ -1,16 +1,16 @@
 .buttonContainer {
-    width: 600px;
+    width: 400px;
     margin: auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgba(248, 247, 245, 0.6);
 }
 
 .buttonContainer button {
-    width: 400px;
+    width: 300px;
     padding: 10px;
     background-color: rgb(209, 209, 233);
     border: none;
@@ -19,6 +19,12 @@
 }
 
 .buttonContainer button:hover {
-    background-color: rgb(252, 172, 239);
+    background-color: rgb(222, 109, 207);
     cursor: pointer;
+}
+
+.buttonContainer h1{
+    background-color: rgb(222, 109, 207);
+    padding: 25px;
+    border-radius: 6px;
 }
