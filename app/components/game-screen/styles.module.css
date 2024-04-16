@@ -1,5 +1,11 @@
 .scoreboard {
     text-align: right;
+    position: absolute;
+    right: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .scoreboard p {
