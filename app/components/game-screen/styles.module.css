@@ -21,7 +21,11 @@
 }
 
 .gameboard section:last-of-type{
-    background-color: #f2dee2;
+    background-color: #dee9f2;
+}
+
+.gameboard section:last-of-type.redBar{
+    background-color: #f2dee1;
 }
 
 .gameboard ul li.selected {
