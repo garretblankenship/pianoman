@@ -1,0 +1,31 @@
+.gameOver{
+    text-align: center;
+    height:350px;
+    width: 500px;
+    background-image: url("../../../public/GAME.png");
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.gameOver button{
+    height: 70px;
+    width: 300px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    background-color:  rgb(255, 64, 140);
+}
+
+.gameOverContainer{
+  height: 110vh;
+  width: 100vw;
+  background-color: rgb(255, 192, 203, .5);
+  position: absolute;
+  top:0px;
+  padding-top: 150px;
+}

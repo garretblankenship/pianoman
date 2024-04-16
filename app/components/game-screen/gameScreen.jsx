@@ -8,7 +8,7 @@ export default function GameScreen() {
     const inputRef = useRef(null);
     const [gameKeys, setGameKeys] = useState(generateGameKeys());
     const [score, setScore] = useState(0);
-    const [timer, setTimer] = useState(30);
+    const [timer, setTimer] = useState(15);
     const [timerRunning, setTimerRunning] = useState(false);
     const [isWrong, setIsWrong] = useState(false);
 
@@ -103,7 +103,7 @@ export default function GameScreen() {
                     <li>l</li>
                 </ul>
             </main>
-            {timer <= 0 ? <GameOver /> : ""}
+            {timer <= 0 ? <GameOver/> : ""}
         </div>
     );
 }

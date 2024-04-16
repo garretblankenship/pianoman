@@ -16,31 +16,35 @@
 
 .gameboard ul {
     text-align: center;
+    padding-top: 20px;
 }
 
 .gameboard ul li {
     display: inline-block;
-    width: 80px;
-    height: 140px;
+    width: 51px;
+    height: 90px;
     background-color: rgb(204, 204, 204);
     margin: 0px 20px;
 }
 
 .gameboard section:last-of-type{
-    background-color: #dee9f2;
+    background-color: hsla(127, 97%, 57%, 0.571);
 }
 
 .gameboard section:last-of-type.redBar{
-    background-color: #f2dee1;
+    background-color: #ee1b3a;
 }
 
 .gameboard ul li.selected {
-    background-color: limegreen;
+    background-image: url("../../../public/pianoman_testkey.png");
+    background-size: contain;
 
 }
 
 .gameboard ul li.unselected{
-    background-color:black
+   background-color: black;
+    
+  
 }
 
 .gameboard input{
@@ -52,6 +56,16 @@
 }
 
 ul.legend li{
-    height: 20px;
+    height: 30px;
+    background-image: url("../../../public/pianoman_pianokey.png");
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: 2px solid white;
+}
 
+ul.legend{
+    padding-bottom: 40px;
+    padding-top: 5px;
 }
