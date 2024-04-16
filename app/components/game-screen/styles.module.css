@@ -27,7 +27,11 @@
 }
 
 .gameboard section:last-of-type{
-    background-color: #f2dee2;
+    background-color: #dee9f2;
+}
+
+.gameboard section:last-of-type.redBar{
+    background-color: #f2dee1;
 }
 
 .gameboard ul li.selected {
@@ -37,4 +41,17 @@
 
 .gameboard ul li.unselected{
     background-color:black
+}
+
+.gameboard input{
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    z-index: -1;
+}
+
+ul.legend li{
+    height: 20px;
+
 }
