@@ -1,12 +1,13 @@
 'use client'
 import styles from "./styles.module.css";
 import { useRef, useEffect, useState } from "react";
+import levelOneArray from "../games/level1";
 
 
 
 export default function GameScreen() {
     const inputRef = useRef(null);
-    const [gameKeys, setGameKeys] = useState(["a", "d", "k", "l", "d", "a","s", "j"]);
+    const [gameKeys, setGameKeys] = useState(levelOneArray);
     
 
 
@@ -40,12 +41,12 @@ export default function GameScreen() {
                     return (
                         <section>
                             <ul>
-                                <li className={item === "a" ? styles.selected : ""}></li>
-                                <li className={item === "s" ? styles.selected : ""}></li>
-                                <li className={item === "d" ? styles.selected : ""}></li>
-                                <li className={item === "j" ? styles.selected : ""}></li>
-                                <li className={item === "k" ? styles.selected : ""}></li>
-                                <li className={item === "l" ? styles.selected : ""}></li>
+                                <li className={item === "a" ? styles.selected : styles.unselected}></li>
+                                <li className={item === "s" ? styles.selected : styles.unselected}></li>
+                                <li className={item === "d" ? styles.selected : styles.unselected}></li>
+                                <li className={item === "j" ? styles.selected : styles.unselected}></li>
+                                <li className={item === "k" ? styles.selected : styles.unselected}></li>
+                                <li className={item === "l" ? styles.selected : styles.unselected}></li>
                             </ul>
                         </section>
                     )

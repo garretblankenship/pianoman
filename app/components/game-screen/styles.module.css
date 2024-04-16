@@ -25,5 +25,10 @@
 }
 
 .gameboard ul li.selected {
-    background-color: green;
+    background-color: limegreen;
+
+}
+
+.gameboard ul li.unselected{
+    background-color:black
 }

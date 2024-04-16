@@ -1,0 +1,7 @@
+
+
+let levelOneString = "asdkjlsjkflaskdjalksdjfjkdlaskdfjskdjflkasdjfkjfkjfkdjlkasdjflkasjkjdksjfksdkfjaaasdfksdfjlkjlkjlaskdjflskdjfkasjdlfksjdkfasjkdjfkjfkdsajlkdjflskdjflaskdjfklkdkdasdfsadkjlkjkljklsjflaksjfkdjkfjkdjfkdslklsllslslslskdfjjlla";
+
+let levelOneArray = levelOneString.split("");
+
+export default (levelOneArray);
