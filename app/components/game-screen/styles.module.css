@@ -36,3 +36,16 @@
 .gameboard ul li.unselected{
     background-color:black
 }
+
+.gameboard input{
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    z-index: -1;
+}
+
+ul.legend li{
+    height: 20px;
+
+}

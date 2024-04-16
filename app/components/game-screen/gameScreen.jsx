@@ -94,6 +94,14 @@ export default function GameScreen() {
                         </section>
                     )
                 })}
+                <ul className={styles.legend}>
+                    <li>a</li>
+                    <li>s</li>
+                    <li>d</li>
+                    <li>j</li>
+                    <li>k</li>
+                    <li>l</li>
+                </ul>
             </main>
             {timer <= 0 ? <GameOver /> : ""}
         </div>
