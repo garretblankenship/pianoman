@@ -89,7 +89,7 @@ export default function GameScreen() {
                 </div>
             </header>
             <main className={styles.gameboard}>
-                <input type="text" ref={inputRef} onBlur={handleInputBlur} onChange={handleInputChange} value={""}/>
+                <input type="password" ref={inputRef} onBlur={handleInputBlur} onChange={handleInputChange} value={""}/>
                 {gameKeys.slice(-4).map((item) => {
                     return (
                         <section className={isWrong ? styles.redBar : ""}>
