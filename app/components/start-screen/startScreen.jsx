@@ -10,7 +10,7 @@ export default function StartScreen(props) {
         <div className={styles.buttonContainer}>
             <h1></h1>
             <p></p>
-            <button onClick={handleButtonClick}>Start Game</button>
+            <button onClick={handleButtonClick}>Enter Game</button>
         </div>
     )
 }

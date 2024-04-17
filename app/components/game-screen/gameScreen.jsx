@@ -8,7 +8,7 @@ export default function GameScreen() {
     const inputRef = useRef(null);
     const [gameKeys, setGameKeys] = useState(generateGameKeys());
     const [score, setScore] = useState(0);
-    const [timer, setTimer] = useState(15);
+    const [timer, setTimer] = useState(5);
     const [timerRunning, setTimerRunning] = useState(false);
     const [isWrong, setIsWrong] = useState(false);
 
@@ -66,12 +66,22 @@ export default function GameScreen() {
         }, 1000);
     }
 
+    function resetGame() {
+        setTimer(5);
+        setScore(0);
+        setGameKeys(generateGameKeys());
+        setTimerRunning(false);
+    }
+
     return (
         <div>
             <header className={styles.scoreboard}>
                 <div>
                     <p>Timer:</p>
                     <p>{timer} sec</p>
+                </div>
+                <div className={styles.instructionBox}>
+                    <p>Press the key matching the yellow block inside the green space to start the timer and earn points!</p>
                 </div>
                 <div>
                     <p>Score:</p>
@@ -103,7 +113,7 @@ export default function GameScreen() {
                     <li>l</li>
                 </ul>
             </main>
-            {timer <= 0 ? <GameOver/> : ""}
+            {timer <= 0 ? <GameOver resetGame={resetGame}/> : ""}
         </div>
     );
 }

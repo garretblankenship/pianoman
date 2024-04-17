@@ -1,5 +1,5 @@
 .buttonContainer {
-    width: 500px;
+    width: 360px;
     margin: auto;
     height: 100vh;
     display: flex;
@@ -28,13 +28,32 @@
 
 .buttonContainer h1{
     background-image: url("../../../public/speed\ keys\ \(1\).png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
-    width: 400px;
+    width: 360px;
     
 }
 
 .buttonContainer p{
     color:white;
 }
+
+
+@media only screen and (min-width:500px){
+
+    .buttonContainer h1{
+        width: 500px;
+        height: 360px;
+        background-size: cover;
+    }
+
+    .buttonContainer button {
+        width: 400px;
+    }
+
+    .buttonContainer {
+    width: 500px;
+   
+    }
+  }

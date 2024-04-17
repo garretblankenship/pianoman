@@ -1,8 +1,9 @@
 .gameOver{
     text-align: center;
-    height:350px;
-    width: 500px;
+    height:225px;
+    width: 360px;
     background-image: url("../../../public/GAME.png");
+    background-size: contain;
     margin: auto;
     border-radius: 25px;
     display: flex;
@@ -22,10 +23,18 @@
 }
 
 .gameOverContainer{
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   background-color: rgb(255, 192, 203, .5);
   position: absolute;
   top:0px;
   padding-top: 150px;
+}
+
+@media only screen and (min-width:500px){
+
+  .gameOver{
+    height:360px;
+    width: 500px;
+  }
 }
